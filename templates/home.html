@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gandazhi_demo</title>
+</head>
+<body>
+    <a href="{% url 'add2' 4 5 %}">4+5=?</a>
+    <div>
+        <h1>
+            {% for i in List %}
+            {{ i }}{% if not forloop.last %},{% endif %}
+            {% endfor %}
+        </h1>
+
+    </div>
+</body>
+</html>
